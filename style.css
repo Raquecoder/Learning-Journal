@@ -1,0 +1,239 @@
+html, 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* font-family Souce Sans Pro is not avalable */
+body{
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro',Verdana, Geneva, Tahoma, sans-serif ;
+  width: 90%;
+  color: #ffffff;
+  margin: auto;
+  height: 100vh;
+}
+
+/*====HEADER/NAVIGATION SECTION===*/
+header{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoSection {
+  display: flex;
+}
+.logo{
+  margin-top: 1.2500em;
+  cursor: pointer;
+}
+.logo:hover{
+ background-color:#881336ce;
+}
+.logoTitle {
+  color: black;
+}
+
+.navSection {
+  display: flex;
+  gap: 1.875em; 
+  margin: 1.2500em ;
+}
+
+.nav__list {
+ list-style: none;
+}
+.nav__links {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.openNavBtn {
+ margin: auto;
+ display: none;
+}
+
+.closeNavBtn {
+  display: none;
+}
+
+.nav__links:hover,
+.nav_links:focus {
+  text-decoration: underline;
+  color: #881337;
+}
+
+
+/*====MAIN SECTION====*/
+.hero {
+  background-color: black;
+  background-image: url('image-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30.25em;
+  display: flex;
+  color:#ffffff;
+}
+
+.heroSection {
+  text-align: left;
+  margin: auto 0px 0.8125em 3.3125em;
+  width: 3842.75%;
+}
+
+.heroTitle {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.heroArticle,
+.dateHero {
+  font-weight: 400;
+  line-height: 1.257rem;
+}
+
+/*====MAIN SECTION====*/
+.main {
+  color:black;
+  margin-top: 2.5em;
+  text-align: left;
+}
+
+.childContainer{
+  display: flex;
+  justify-content: center;
+  width: 979px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #47474725;
+}
+
+.date,
+.dateTitle {
+ font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+} 
+
+.child {
+  margin: 0.625em auto;
+}
+
+/*====ABOUTSECTION===*/
+.postOne,
+.post,
+.postTwo {
+   background-color: #ffffff ;
+   color: #000000;
+}
+
+.postOne {
+  display: flex;
+}
+
+.postSecond{
+  margin-left: 1em;
+}
+
+.profile-picture {
+  max-width: 30%;
+}
+
+.post{
+  margin-left: 7.5625em ;
+}
+
+/*===FOOTER===*/
+footer {
+  width: 100%;
+  background-color: #202020;
+  color: #ffffff;
+  height: 14.07506vh;
+  text-align: center;
+  padding: 1.25em 0;
+}
+
+p{
+  margin: 0;
+}
+
+.logoTitleFooter {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: 0.03em;
+}
+
+.copyrights {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  padding-top: 0.625em;
+}
+
+/*===MOBILEDEVICES===*/
+
+@media(max-width: 810px){
+ body {
+  display: flex;
+  flex-direction: column;
+} 
+
+.childContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*===Navigation===*/
+.openNavBtn {
+  margin: auto;
+}
+
+.openNavBtn,
+.closeNavBtn {
+  display: block;
+  background-color: transparent;
+  display: block;
+  background-color: transparent;
+  color:black;
+  font-size: 2rem;
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+}
+
+.navSection {
+  display: none;
+  border: 1px black solid;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 20%;
+  height: 100vh;
+  padding-left: 15px;
+  margin: 0;
+}
+
+.nav__list {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+/*===Main Post===*/
+.postOne {
+  display: flex;
+  flex-direction: column;
+}
+
+.post{
+  margin-left: 0 ;
+}
+}
